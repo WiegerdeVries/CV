@@ -1,0 +1,464 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Second2" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,7709.6" sap2010:WorkflowViewState.IdRef="Second2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="914.4,7644.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Opening Excel first, because thats the main item i'll be working in" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="872.8,7552" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Data\Input\Input Transaction Data.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="839.2,7411.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="ReadDT" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelDeleteRange sap2010:Annotation.AnnotationText="Deleting all values for &quot;PostalCodes&quot;. This is because im sure that current values will be overwritten with correct ones and i'll use those for my if-else statement" DisplayName="Delete Range" sap:VirtualizedContainerService.HintSize="797.6,130.4" sap2010:WorkflowViewState.IdRef="ExcelDeleteRange_2" Range="J2:J1048576" SheetName="Sheet1" ShiftCells="False" ShiftOption="ShiftUp">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExcelDeleteRange>
+            <ui:ExcelReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Read in the Excel file into a DataTable &quot;ReadDT&quot;" DataTable="[ReadDT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="797.6,91.2" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExcelReadRange>
+            <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterating through the rows of the DataTable and start working with it" DataTable="[ReadDT]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="797.6,7016.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="748,6836.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign sap2010:Annotation.AnnotationText="Correctly formatting the  values of the DataTable. With REGEX I can remove special characters, numeric values or alphabetic values. With .Trim I can remove the awkward whitespaces" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="706.4,300" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[row.Item("StreetName")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(row("StreetName").ToString, “[^a-z A-Z]”, “”).Trim]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[row.Item("HouseNumber")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(row("HouseNumber").ToString, “[^0-9]”, “”).Trim]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[row.Item("CityName")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(row("CityName").ToString, “[^a-z A-Z]”, “”).Trim]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[row.Item("FirstName")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(row("FirstName").ToString, “[^a-z A-Z]”, “”).Trim]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:Object">[row.Item("LastName")]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:Object">[System.Text.RegularExpressions.Regex.Replace(row("LastName").ToString, “[^a-z A-Z]”, “”).Trim]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:MultipleAssign>
+                    <ui:ExcelWriteCell sap2010:Annotation.AnnotationText="Writing the updated values to the input excel file too" Cell="[&quot;H&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - Streetname" sap:VirtualizedContainerService.HintSize="706.4,119.2" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="Sheet1" Text="[row(&quot;StreetName&quot;).ToString]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ExcelWriteCell>
+                    <ui:ExcelWriteCell Cell="[&quot;I&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - HouseNumber" sap:VirtualizedContainerService.HintSize="706.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="Sheet1" Text="[row(&quot;HouseNumber&quot;).ToString]" />
+                    <ui:ExcelWriteCell Cell="[&quot;G&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - CityName" sap:VirtualizedContainerService.HintSize="706.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="Sheet1" Text="[row(&quot;CityName&quot;).ToString]" />
+                    <ui:ExcelWriteCell Cell="[&quot;D&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - FirstName" sap:VirtualizedContainerService.HintSize="706.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="Sheet1" Text="[row(&quot;Firstname&quot;).ToString]" />
+                    <ui:ExcelWriteCell Cell="[&quot;E&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - LastName" sap:VirtualizedContainerService.HintSize="706.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="Sheet1" Text="[row(&quot;LastName&quot;).ToString]" />
+                    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Opening browser to start looking up PostalCodes" AttachMode="ByInstance" DisplayName="Use Browser IE: Postcode zoeken bij adres? Vind gemakkelijk &amp; snel | PostNL" sap:VirtualizedContainerService.HintSize="706.4,5732.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="672.8,5484.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Typing values from my DataTable into the website" ClickBeforeMode="Single" DisplayName="Type Into 'Straatnaam'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="631.2,259.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[row(&quot;StreetName&quot;).ToString]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.postnl.nl/postcode-zoeken/" DesignTimeRectangle="518, 857, 407, 46" ElementType="InputBox" FriendlyName="'INPUT  street'" FullSelectorArgument="&lt;webctrl idx='1' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Straatnaam' tag='INPUT' type='text' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZsAAAAyCAYAAACK/HZqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI7SURBVHhe7dlBSpRxGMfxOYJH8AjdoG6gN7ATWEfoAIELd0IErQqEcVMtJnPXSnAR1MKhoJUuctJ5p9Ek/vq8joOT7wTj9LT6fOAHwryuvzzv2+pXw2JmZpY5sTEzs/Q1x6bbKf3t1XL84l45Wl8o35+2zMzMGtfbWCwnr1dK9Wnzdk9Gm4hN1Tso/feP6sCcvHpQfn54Un592zEzM2vc2X67DHfXSn9ruQ5PddmQm1253uRlc/lQFCr+GQBmcX64d3XltJcmQhMbx6bqduoqRakA4C5+//h6deH88UptHJt43xZnEADMo3r78NZ1M45NnD7x3g0A5hGfYuLbf2Ns4uzxrQaAecXnmGjK1Nj4XgPAvMQGgHRiA0A6sQEgXUpsWq3W6C8AEBsA/gOxASCd2ACQTmwASCc2AKQTGwDSiQ0A6cQGgHRiA0A6sQEgndgAkE5sAEgnNgCkExsA0okNAOnEBoB0YgNAOrEBIJ3YAJBObABIJzYApBMbANKJDQDpxAaAdGIDQLqU2ADATWIDQDqxASDdX2PT21gsw9210aMAcDenH5/XTWmMTX97tfS3lkePAsDdDHYel5P2UnNsqm6nPnvOD/dGjwPAbKIhR+sLpfq82RybWJQoTh/BAWBW0Y769dmblVINTqfHpv7x8qG4cOIMivdu8aHHzMxs2s7223Uz4qI5fnm/VL2DidDEJmJzvcGXd+MrJ8JjZmY2bRGZaEa19+zWRXO9xtiYmZn9y4mNmZklb1guAB9PHdlhsnzzAAAAAElFTkSuQmCC" InformativeScreenshot="4c9919b95b9fc3ee46a420b385b6b219.png" ScopeSelectorArgument="&lt;html title='Postcode zoeken bij adres? Vind gemakkelijk &amp;amp; snel | PostNL' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="300, 857, 218, 44" ElementType="Text" FriendlyName="'Straatnaam'" FullSelectorArgument="&lt;webctrl idx='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' aaname='Straatnaam' check:text='Straatnaam' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAwCAYAAAB+KcRFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAODSURBVHhe7d2/axRBGIfx/Cl29lqLtSIYsNDOgJ2CqbSxEBuxUEQEC9FGEBsxKRSF4A/EMmBpYUQQBBsJJCenNivPwSuT2dncHiY7YJ7iw2Vm393ZDe83O4mFc5ujcSNpWAZPqsDgSRUYPGlgo/VvBk8a3KtFgycNabS20ny/PmfwpCFtPDvdbC7PGzxpSOt39zXj1ZsGTxoS28xfH5cMnjQkgvf7y2uDJw3J4EkVGDypAoMnVWDwpAoMnlSBwZMqMHhSBQZPqsDgSRUYPKkCgydVUAze0+dvmzPnLjf7DxybOHxkobl15+GWE6/euLdlPIQaa0q7oRW8N+9WJ2FLg8YcYgxq0vEQaqwp7YZW8HirnFq40CrMTQvB6vsPxfl/YfD0v2gF79KV29sGj2ASgBRbU45xHl/zGSH59PnrZNt68NDJyRyfixevTebjmtNqtluTY7yd7z94MtkSx/k8R1wfjOM4WC9/i/ep4drMxTMy5h64V+45noHj+blSaAWPBqZxHj1+0SpOUZPP0Ww0Lo2YNl16rWhQxFzfmtKarEWzE5J4y/LJfaTXJKgRZBBWamLct4Z7OHri7N/gsxbrU8f3Luqm/QDT3lb84wpNEw1GY5e2jV3BmxZYxFuxdCyUarqCR+jyeZ6BY/l8qnS9XF7DOA0n+AGRr8X3rM/1tTcVgwcaJ9168XV6vNRUBCXeBCnefjRnXAt5qPrUlNak4UsBy+cJC8/AD5O4fn69PjX5GF33UKqV0Bm8VGw/0+1jqalKweMcatm2xZszf5v1qUFpza6mT+cJFIEm2F3P0KemNEbXPZRqJfQKHmgigpGO0+MoBY9tYP62zEPVpwazNH06z33zFstr0uv1qSmN0XUPpVoJMwUvDRXj/HedUvCYS//ogDxUfWpQWrOr6dN5PnmT5TVpMPrUlMZI10qVaiW0gkfDp+Gh0eN3r7TpGadvQJSCR0PyJolzOc65mKUGpTW7mj6d53rxzwCM2c5yrwQj3dpOq4HB005oBY+/SkbDgWYkeGnzIcJBTYShFLwIblyPbWWcG83apwalNbuaPp/na56Fcwk5z8k63PMsNRyLr0O+VijVSui91ZS0cwyeVIHBkyoweFIFBk+qwOBJFRg8qQKDJ1Vg8KQK/K+YpRpenm82l+cNnjSk0drKZLtp8KSBbSwdN3jS0EY/fho8aXjj5g+8bGo5aq/ddQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" Text="Straatnaam" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='LABEL' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Huisnummer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="631.2,228" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[row(&quot;HouseNumber&quot;).ToString]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.postnl.nl/postcode-zoeken/" DesignTimeRectangle="518, 916, 92, 45" ElementType="InputBox" FriendlyName="'INPUT  number'" FullSelectorArgument="&lt;webctrl id='number' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='number' tag='INPUT' type='text' aaname='Huisnummer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAARCAYAAAAi5qlcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVFhH7ZXJDoJAEET9/+8zMUTjwi6yhEVAPLQUB8IETsRJX+oldeRSj6451E0njF4oQDmbArKikfBZyOUey+kcyNHxmJ1xrpG4USZpXq96RgwBVdNKMBaP0m9eIklaSvPumZ0p63YsvhI3SCcZ+KmXfSOGAJQPY/iQ/JeuH6ZuH/5rW0A+zg4swRyxw2f4Th0v52gW4IbZdCrELn6cG1cwC8B5YK+IXTDveGNXAnAa3H77YOLR9aYA7r99KEAZClCGApShAGUoQBkKUIYClDEFdPIDeQ8KePvr2WAAAAAASUVORK5CYII=" InformativeScreenshot="990dc33304b408de56c9230aee463b89.png" ScopeSelectorArgument="&lt;html title='Postcode zoeken bij adres? Vind gemakkelijk &amp;amp; snel | PostNL' /&gt;" SearchSteps="FuzzySelector, Image">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="300, 916, 218, 44" ElementType="Text" FriendlyName="'Huisnummer'" FullSelectorArgument="&lt;webctrl aaname='Huisnummer' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Huisnummer' tag='LABEL' type='' check:text='Huisnummer' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAARCAYAAACy2RLWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB/SURBVGhD7dgxDoJQEEVR9r8+GxoLDBoThABfpRtD3MNMc4qzhJu8vG5v3wByCQ8KCA8KCA+Sbe0jPMg2PhfhQaZ5aXHpb8KDTMP9FcM4CQ8y9ddHTPMmPMh0zsx1d65AqjO89j6EB5mEBwWEBwWEBwWEBwWEBwWEBwX+4R3xA2e684FDproKAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Huisnummer" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="I found that the website remembers past entries and makes suggestions while typing. These suggestions can obscure the &quot;search&quot; button. So instead of clicking I use the enter key" ClickBeforeMode="Single" DisplayName="Type Into 'Woonplaats'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="631.2,304" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[row(&quot;CityName&quot;).ToString+&quot;[k(enter)]&quot;]">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.postnl.nl/postcode-zoeken/" DesignTimeRectangle="518, 413, 407, 47" ElementType="InputBox" FriendlyName="'Woonplaats'" FullSelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='text' aaname='Woonplaats' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZsAAAAzCAYAAABBoKXPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAU8SURBVHhe7d2xbxxFFMdx/ht6RI2oUVpEQYUoKJBoKJCooKGBigIaCgoKUlGkBdGCRIUQiWXFUWxfznbsu9i+2MYUS76be+bdeM45xxnJF30/0pPv9mZn91y8n2dWSl45nBx3lmVZltWyDBvLsiyreRk2lmVZVvOqhs3eeNINtkbd6r1hd3t10P21smFZlmVZ1bpzd9itP9jrdkeH5/IkaiZsDiZH3WB73AfMvY2dbmd3v5s8PrEsy7Ksau0fHj0JmYNufbDbB8+DJxmScyVqJmwImpW1YX+yJEmXcXxy2mfI/c2HM0FDnYXNaDzpU4mkkiTpefxz+m+fJeWW2lnYsN/GMkiSpKvY3BqdW92chQ1LH/bdJEm6Ch7F8Oy/GjYse3xWI0m6Kh7HkClzw8bnNZKkqzJsJEnNGTaSpOYMG0lSc4aNJKk5w0aS1JxhI0lqzrCRJDVn2EiSmjNsJEnNGTaSpOYMG0lSc4aNJKm5JmHz7Xc3uzffem/6btYHH33evfv+J9N3szjnhx9vTd9dTz//+tvc+7+qr77+fvpKkl4uTcLm9z/+7F597Ua3tX3+P14jUF5/453pu//9fedufw4/r7OWYcP3l6SXUZOwAYHy061fpu+eInxoqLVQYey81dB1YthI0uU1C5uPP/2y++yLb6bvniJQaNRUuV3GWM7JGH/j7Q/PAootOFZNGQHGeYQbYwiscjuK92ztcU0+Zxzjy/vjvpif6+Rr5hVaGTaM532Mr13/WWN4HZ9FcR2U98PvQ5KWTbOwobGXjZHmTmOlaKAZY3MA0WRprvkYgUFI5FUR89DI4xg/mSsHCdfjPMbmcTT9vPpiHs6NRh9Blr9HGTbMw72GuH6+70XGgO9b4r753oFzJWnZNAub2DLLzZHmTrOmaKKhNra2MgKNPlYFjOe8vPIA8+fGXQs3RPgF5o6gyXIolWFTw5x53pramDJs4vciScuuWdiAv97jr/IIhkDYxF/7tVUQ7/OqI9Cgo9nHNlsN14rgmNf8y+PzwiYHXC1suA/CjO/EdanyeouM4ViJoCN4XdFIWmZNw4agiRUFgZJXF7yOZltbxdB4a42fc6LZ59elfD7jysaO8vi8sMnjyrCJrT3CJFZY5byLjEEtbAiZeCZV23qTpGXQNGzyNhfhkp895NUMjTQ/08CyrGwiRLJy3kXGoBY2GddmLgNH0rJpGjaIv8ZpknkrKIKIz9gqKl30zKbcmqs9s+F6odbYUR6vhQ1zM1eEYRk2XD9/L5TzLjIGte9Sqp0nSddd87CJLaRaoBBEHK+FCs09wijEXLlxs2Ki+ccxfjJvnnNegy6PMw/nRcNnrpg/lGHDa4IxxD3mY4uMAb+LCNKQV0TcD2Nc2UhaNs3DhgZJaNQChcbKZ+UWWohtMsZQNP5yLMFA06Z5M4ZmXAbLZcKGazAHc0Ug5NVGGTbcD+/zeO6b17FKWmQMeB3XjtDhfhgX59a+hyRdd83DZpkQCLn5S5JeDMMmMWwkqQ3DJjFsJKkNw0aS1JxhI0lqzrCRJDVn2EiSmjNsJEnNXRg2K2vDbnd0MB0qSdLzGT2a9JlSDZvB1qhbH1z8b3VJkvQsw51H3f3Nh/WwGY0n/bLn+OR0OlySpMshQ26vDrrd8WE9bCiSiKWPgSNJuiyygwzZGO71z21yvsyEDR8yiBUOyyD23ThmWZZlWfNq//CozwxWNGvr293B5GgmaKiZsIka7z8+W+UQPJZlWZY1rwgZMmNn96APn1quVMPGsizLsl5kGTaWZVlW4zru/gPWjN1S2bnVlgAAAABJRU5ErkJggg==" InformativeScreenshot="4d693c48d8071c823ff6ff35f7705ca9.png" ScopeSelectorArgument="&lt;html title='Postcode zoeken bij adres? Vind gemakkelijk &amp;amp; snel | PostNL' /&gt;" SearchSteps="FuzzySelector, Image" Text="Woonplaats" TextMethod="NativeScrapping" TextSelector="&lt;webctrl tag='INPUT' type='text' /&gt;">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="300, 413, 218, 45" ElementType="Text" FriendlyName="'Woonplaats'" FullSelectorArgument="&lt;webctrl aaname='Woonplaats' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Woonplaats' tag='LABEL' type='' check:text='Woonplaats' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN4AAAAxCAYAAAC1dRfgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPcSURBVHhe7Z29jw1RGIf9N3pqUROdgnITHYWKRiEa0ShEoqKRiEZUEkoRpUQjEQViuT5i7ca6PrqR5yZv8jpzZl1h59x1n+LJnTnnN+fM3LzPnLO32V1fpt87ERkXxRNpgOKJNEDxRBqgeCIjszn9pngiYzP5sKF4ImOyvjHtnjx7rXgiY7L69lO3OllTPJExefbiXbe2vql4ImPCNvPzF39cERkVxJt+/aF4ImOieCINUDyRBiieSAMUT6QBiifSAMUTaYDiiTRA8UQaoHgiDVA8kQYonkgDeuLt3Xeku3b9di94/+GjbveeQ92duw96feT3H1jptS8aR1dOVe//b2HM7RhX/l964h07cbY7c+5yL4hciHfpyo1e38nTF2aU7YvGdol3/uLVGbU+kRo98RDr4OHjvSAyIl5NMPK1VXLRUDxZFHriPXr8dCbY85eTX4LIRXGVW0py5LkutyEo21b6uKZWmDdv3ZuNSwZYbdnS5gxjMDbjRY5rcg6ZoviZK+YsXwaleLxMIj80/+8y0R4wR/Tl+xnawstyUv1xhWJBijgPuTjmMxceOfJxDhQnBRgy8okseQvLGIyVi5HVNkSLNjKMn3MUNOPFOTJxHePHCyPa8nOU4nGcXzDMXz7LPJmQPrfFziE/Sz6W5aYqHgWct5QUfbzJ+aSohrIUF7LkYgUKOOQFrskiBoyfi7gUHfKLABg77i/DfWdBS/Fq5HGHKDM18Xi2sk0kqIrHKsFqEedIEkWEdKxo0VeujhznYs9QsFH4ZPJ1AfNkiYZEmEe8UvZSPARGEO6FXBD982Zq4iF9ueKKBFXxgKKJlQa54ji2iBzXVrdSnAzZKPx8nPmX4kHOZfG4Z56Ll0peUXN+ngzUxINYcfkuGcOtpgSD4sVWkILLqx/EKleufrBTVrz4Gyz6gpyfJwND4gUIzPfJ91brl+VjUDykoFAoPoom94WUFGX+0QO2+huv3L4yRs4AcjBnnJdFXmsfEg8Z8oshi0df+VyQx50nA+Rqz1Iy9CyyfAyKB4gCpVwhJYVUCgb/+lfNOM7kdmTifkIqiL+xclsWj0/6YwvJnPQzbsw/TwaYi/nzd8E1OYOcrngSbCkeb3uKrCYXBVluM4PYWpHhegqOwitzsS0lA4wXRR7Qns9r7QjCHFwfYzFuuZXN4gH3FPcY+Xhp/EkG4rsiy3n5bOTLZ5PlZUvxdgrIVIogssgonkgDFE+kAf+FeCI7DcUTaYDiiTRA8UQaoHgiDVA8kQb4r5hFGjB5v96tTtYUT2RM1jems+2m4omMzKs3HxVPZGz8cUWkCd+7n4O0ysz87TjjAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Woonplaats" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NGetText sap2010:Annotation.AnnotationText="Getting the postal code and saving it in the DataTable" DisplayName="Get Text '9712HC'" sap:VirtualizedContainerService.HintSize="631.2,198.4" sap2010:WorkflowViewState.IdRef="NGetText_1">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.postnl.nl/postcode-zoeken/" DesignTimeRectangle="312, 661, 113, 47" FriendlyName="'9712HC'" FullSelectorArgument="&lt;webctrl idx='1' tag='EM' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='EM' /&gt;" ImageBase64="" InformativeScreenshot="e45307a7bdeb00ad7262c29c56444ba2.png" ScopeSelectorArgument="&lt;html title='Postcode zoeken bij adres? Vind gemakkelijk &amp;amp; snel | PostNL' /&gt;" SearchSteps="FuzzySelector" Text="9712HC" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='EM' /&gt;">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="686, 481, 187, 47" ElementType="Button" FriendlyName="'Postcode zoeken'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Postcode zoeken' check:text='Postcode zoeken' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAL8AAAAzCAYAAADGmNmlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATZSURBVHhe7Ze9jhRXEIX3DfwIfhLzGkR+BZ6AyCmOcEZqCVlkFpElZBFBgpAsJAfIiWXJgWW8u+ZPYKDp72rOqKit7pnx7s42e09Jn6b73ro/VXVud8/B8xevB2N65BPxHz/9aTi6f92YLliL/+jBjeHZzS+GZ98eGNMFTfzHT+5Y+KY7mvgP735ddhpzmbH4TbdY/KZbLH7TLRa/6RaL33SLxW+6xeI33WLxm26x+E23WPymWyx+0y0Wv+kWi990i8VvusXiN91i8Ztusfj3BPby52tl35J598/T4c1vP5Z9nzsXIn4Smk1JPrz1ZTnmtDy/e3X478+HZd8+wCz+ZXFh4o8JPf7hq+H14++GD29fDu///eMT37MC4bFu1bcPLP7lsQjxC8SBvXr4zYm+02Lx/z8s/jNmLqFY7uP+w6u/Wx/27q9f2mdM9OGedhn+vE3oqyweMI3lzYPxyydS/ASr5q9iYMzb3++dmAvL4ueeN52siisyZXnebfIFvHFjTOwlP3iqWhEPvjE/b379fr1mlT/2SD9tcX/4VnncB4sXP0kkUSpKFCrFo42Eco/o1Eayda376smPD2OjQPhlXflwH+dnPX2m0SY/QBRRRIwlHiyKlH7GMw/zMW+LdWyL+55De4j+2+QLuKaNvXHdRDkKGIsHINeqWpMc5JiVB/kQO0Ybe8SH9pgH+e6LRYmfhGIxiVgUjaDAEp4Sm30iU+KnEFV7BPFUPhQMQzi6p5C6j2AxDvZfFRxx5ANVwRpNvKNg1bZtvoC4IfqAhKz7WCvlOR4O1SweBmB/mHw1toqZNclxbj9vFiP+6mmhV2n0W/eN4+WroutpUjEl/m2eOnM+mApMAStBASZRar/VISGuTYcRWCfmCrbNFxBTFLGQSHWvWrHnKg+smfchqoOTfWDbmM+aCxN/ZRQ0CmIuKRQO0z1PD6wlfCxIFtaU+DGJcoo5HwqvAre1V9eZOIeEMGVTMQuNz4d9l3xtMvkxHzFiiD/nlTXnTPnQnuNYMbfv8+TCxI/QSYgEUbFLMYFXL8JnTH5KsU41Fza3B5jzOY34+a2Ye4NB/oQRu+QLI1fV+iA/5ZLxXOc3G2uSg2oO0OcQ11gcK+b2fZ4s7g9vZJfXeKaNHYume5JfJRg7s8+eQhwCYw9c67Nnk8griJuclJ9MO+SLmPCPPhWxVtq34oCc5yks/hXbir9KtqCQ1dNP5GRPJX/qz2xkykdPUwlRQqiEicU4EOnUQZlCfy6rfMAu+WLtqYMSybViXDxE2tOmB8hU/sHin0BF0tOVAiNGRKZXKm0kn9+1z7hGTKiKhECjOCUYhKHxFCruj3bWw4d5GM96apMf7QgD4lzsF1MMoIPDOoojr5tpMY1zVX1im3wB17TRp73yG/MIuVbEyLj41iAHtDGWfmixBB+Lf0VO6CbwpaCyWDCgkCowxi8ioAhxnibY1Txx/ShQDJ88XiKS4VPFwJgmwNVeOAisy9jsj0Dpl1XrRjRntjzvpnyJEzGN82ffqlbVGy6vSVxxnMVvzIKw+E23WPymWyx+0y0Wv+kWi990i8VvusXiN91i8ZtusfhNt1j8plssftMtFr/plib+4yd3yk5jLjNN/HB0/3rpYMxlZS3+9gZ4dGs4vH2ldDTmcnEwfARyqOfOWogvHQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" Text="Postcode zoeken" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='INPUT' type='submit' /&gt;" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:Object">[row("PostalCode")]</OutArgument>
+                              </uix:NGetText.Text>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <ui:ExcelWriteCell sap2010:Annotation.AnnotationText="Saving the Postal Code to the input excel file too" Cell="[&quot;J&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Clean inputdata - PostalCode" sap:VirtualizedContainerService.HintSize="631.2,119.2" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="Sheet1" Text="[row(&quot;PostalCode&quot;).ToString]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:ExcelWriteCell>
+                            <If sap2010:Annotation.AnnotationText="Evaluating whether we succesfully found a postal code. If postnl did not yield a postal code then the cell should be empty (we cleared them all) and thus the condition will fail --&gt; moving to the else statement" Condition="[row(&quot;PostalCode&quot;).ToString.Length = 6]" sap:VirtualizedContainerService.HintSize="631.2,1508" sap2010:WorkflowViewState.IdRef="If_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="475.2,1312.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NApplicationCard sap2010:Annotation.AnnotationText="Decided to use Google Search, because they know everything" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser IE: Google" sap:VirtualizedContainerService.HintSize="433.6,1218.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" Version="V1">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,970.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Typed the Cityname, Streetname and StreetNumber into the search and hit Enter key" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,272" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="[row(&quot;CityName&quot;).ToString+&quot; &quot;+row(&quot;StreetName&quot;).ToString+&quot; &quot;+row(&quot;HouseNumber&quot;).ToString+&quot;[k(enter)]&quot;]">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.google.nl/?gws_rd=ssl#spf=1606232189993" DesignTimeRectangle="337, 190, 534, 42" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhoAAAAuCAYAAABuzbC0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADiSURBVHhe7dYxEcAwDACx8keb0XcZHBL9TUKhbwEAfjYze85Z0QAAEvde0QAAOqIBAGREAwDIiAYAkBENACAjGgBARjQAgIxoAAAZ0QAAMqIBAGREAwDIiAYAkBENACAjGgBARjQAgIxoAAAZ0QAAMqIBAGREAwDIiAYAkBENACAjGgBARjQAgIxoAAAZ0QAAMqIBAGREAwDIiAYAkBENACAjGgBARjQAgIxoAAAZ0QAAMqIBAGREAwDIiAYAkBENACAjGgBARjQAgIxoAAAZ0QAAMqIBAGREAwDIiAYAkJiZfR4eQ31xspOPAAAAAElFTkSuQmCC" InformativeScreenshot="aebe8ba681eb4b0ea5a3f5614a278e1a.png" ScopeSelectorArgument="&lt;html title='Google' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="296, 198, 25, 25" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl idx='1' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAExSURBVEhL7ZQxawIxGIb9/z+hk5NddLAO7eAuCEJpKShSiojooA7W5aaU5+h7RLncfeFy6OADIeSM9+TLm1zH3YCHtFXuX3r6Pbv94Zj3TaiVZlnmZu+fbvDy6p66vaJ1e303mc7+Z8VRKaWi0dv4QvTcH17IGVN9DEEpFUqIbLH8zp8JxloAvf9bHUEpWyphKENEEjPfSlCqDKmois12VyzOSqmUyngRzXJSETLXmm2plD/HrF67QtUWSqVkpUotB0SVWu9vMFMdkLpMf1brfF7jTMF6erW1SU4v6IWI/YqRkV/yewp+JWoIlKHG9HxIGp3eaz6+5oVEDTHPWZj/5bKITVJBtmzrdcaMVb1FHCWtIkacTApWcVIp+GKyLiO5FBAjDF2jVqR1PKStcgOpc39xGLDBX8bXGgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                                <uix:TargetAnchorable.PointOffset>
+                                                  <uix:PointOffset Position="BottomLeft" X="39" Y="-17" />
+                                                </uix:TargetAnchorable.PointOffset>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NTypeInto>
+                                          <uix:NGetText sap2010:Annotation.AnnotationText="Saving the postal code to the datatable" DisplayName="Get Text 'Directions'" sap:VirtualizedContainerService.HintSize="333.6,198.4" sap2010:WorkflowViewState.IdRef="NGetText_2">
+                                            <uix:NGetText.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.google.nl/search?source=hp&amp;ei=wii9X-7EFcrzkwWj-JPACw&amp;q=Rotterdam+Westblaak+50&amp;oq=Rotterdam+Westblaak+50&amp;gs_lcp=CgZwc3ktYWIQAzICCCYyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgUILhCTAjoCCAA6CAguEMcBEKMCOgIILjoICC4QyQMQkwI6CAguEMcBEK8BOgUIABDJAzoECAAQCjoKCC4QyQMQDRCTAjoGCAAQDRAKOgQIABANOgoILhDHARCvARANOgkIABDJAxAWEB46BwgAEMkDEBM6BAgAEBM6CAgAEBYQHhATOgsIABDJAxAWEB4QE1CjBFj2DWC0DmgAcAB4AIABgwGIAawPkgEEMTMuOJgBAKABAaoBB2d3cy13aXo&amp;sclient=psy-ab&amp;ved=0ahUKEwjurb65wZvtAhXK-aQKHSP8BLgQ4dUDCAo&amp;uact=5#spf=1606232259922" DesignTimeRectangle="246, 695, 179, 23" ElementType="Text" FriendlyName="'3012 KM Rotterdam'" FullSelectorArgument="&lt;webctrl aaname='3012 KM Rotterdam' parentid='rso' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='rso' tag='SPAN' type='' /&gt;" ImageBase64="" InformativeScreenshot="47f4a78b649707bf557c2ad1b871c3ab.png" ScopeSelectorArgument="&lt;html title='Rotterdam Westblaak 50 - Google Search' /&gt;" SearchSteps="FuzzySelector" Text="3012 KM Rotterdam" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="901, 663, 117, 57" FriendlyName="'Directions'" FullSelectorArgument="&lt;webctrl aaname='  Directions' parentid='rso' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  Directions' parentid='rso' tag='DIV' type='' check:text='Directions' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAAA9CAYAAACJM8YzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVHhe7Zsxa1RBEMf9HIpgI2IlWFtaWNjY2vkJLFQEtRAbFYyCaGOhxMZPIKKFXfIlrGwkicYgF0PUmNX/4R/n5mbfexdfjufM/GBIbnffvt353b6bC3qgJO5JyQFIyQEIJXn7+265/2ZUjt9YG//E6wiEkgyxh6+slEOXV8Y/8ToCIST/+FnK3VejsVwdaEe/Z9xLhsBHbzdNwQz0exbtXnLtBOvAOK+4lcwiyxJaC6/FmFvJssjqGl6LMXeSm4osKxaXv5YjVyfbvBVjriR3KbJ0gGdL06I9FWOuJM9yghkEJ1r3eSnGXEhuKrIuPN0oo+1uR3JxeascvbY6cb2HYsyF5KYi697r7qdxtL1bTt35OHG9h2LMhWT8LVqKkbEgJON3HeT9+k45+3DdnAPz/8+4P8lSpNUPNn+f4JrgPMkDoekzuU3yh42dcuaBLRiBefMzeUBY1XWb5HOP64Kzuh4g1vfkY9dXy8lba+OQ7W2R35MHDMTs5fuyDFzvRTBwJ5k0FWO18FBkWbiV3FSM1cJDkWXhVjLp+uj2UmRZuJdsFWM6PBVZFu4lg6ZizFuRZRFCMpHFmNciyyKUZBZj+e+uE3ek5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5ACk5AD0Kvn58lY5eGllKk7cnPyvnxxHLr74MnUNA2PJ+SefzTEI9EluvxxNjSFWnwzOhd/l/cHSu29T4zGfhOu0QLuc01oL7tEn+yJZozdtST698OnPq79QPsE8WqYFxug3FueyEoh2LRPods6hx6JNrov7tfYkr9f7A5RurWevzEUywIaZCD2uJhlAFk8KrpfJtGCSLHBtW+Ilsp0nuHbK0CfXifvINiLnxBjsXSNz1Qdzk4zN8nTNIlknr23zXcZoZOIlsr1pjQD3ZD/XwJMq3xhyTozB6/1mbpJlnx5XSyCTRJgUK5g4zIPrZkFeL5HtFFdDvonlWKxH7k3fC33cA2LWtXdhMJK5SR2StkSDoUnmY55Po9q9AK5Hf9OYvTDIxzUTo2W1JRo0jWn6PLWSKtv1GjW4J/v1GrB3zMV9tQmUc/XBXAsvSmuTDDiGJwDo5Fk0rQH3sfrQZiVetrcJQh/Xaq0T+0Nwjqb55IHog7lIxoZlux5XOyWUwhPYRTJgMiWcy0pq1/baHGiT67LWSanyeozBaw0E4159sS+Sdeh3JceRmmTAzykkiUmxQt+DQmTwzaJBnxYHrHYpiyGfNsCSDPjYlnNa69Tz/Su9Sk6GSUoOQEoOQEoOQEp2Tym/ACdhZo5u4BtmAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Directions" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NGetText.Target>
+                                            <uix:NGetText.Text>
+                                              <OutArgument x:TypeArguments="x:Object">[row("PostalCode")]</OutArgument>
+                                            </uix:NGetText.Text>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NGetText>
+                                          <Assign sap2010:Annotation.AnnotationText="Google uses different formatting. Because of that I grabbed not just the postal code but also the cityname. Here I overwrite the current value in the datatable to only the postalcode" sap:VirtualizedContainerService.HintSize="333.6,153.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Object">[row("PostalCode")]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Object">[Split(row("PostalCode").ToString, " ")(0)+Split(row("PostalCode").ToString, " ")(1)]</InArgument>
+                                            </Assign.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Assign>
+                                          <ui:ExcelWriteCell sap2010:Annotation.AnnotationText="Writing the correct value from datatable to the input excel file" Cell="[&quot;J&quot; + (ReadDT.Rows.IndexOf(row)+2).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,132" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_18" SheetName="Sheet1" Text="[row(&quot;PostalCode&quot;).ToString]">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ExcelWriteCell>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARHSURBVFhHvZddbBRVFMf7YrAq+OSbD6Kgb0qUUh60xq9VtA8k1EJrH1CsGIM+GLUmBA0kFi0WSMCHLcVCTMO2GmjFCiUFpH60sUjMEtIGLaAWama32w92dt2vOf7PndPd3M7sdmobf8k/M/fec8//zJ07s7NFXrEsawlUnclkmqEBaAxKisLS14yYKo6VafMHyR5A4hYoTh5BbAw6iLnLJc3cQZ7bkKQRSttp5w7mpqBdKKRY0noDE+7HxEuSZ94gVxA5l0n6wiDwYUwIyVyN9I0RMls/p4l33qDwi8+R4VtNxjOlFF7no/G3XyfzcBOlR/6UaB3kNHBYITbuyJU7zNOj12ly+/tkPL2KjKdKCgsxkx++p+bMhIvIuxIYuB0BjmWPn+qi0Atl7mYFFCp/nP45e0qy5IAH3w7nnsBAo8RkMY8cck3uVVMN2yWTDrwaxNYGFfGjpu12vnK3pKxIbRVFD+yj+DdHKd51DOf7KfJatRYztbueyLIkmw68UtqtQEeLjCl4s4Wef0xLyBqrWUuJ8/0S5SQx0EfhDeV0c/+n0pMfeDYrc5zfiYb2konufdNhPr7lZbKmpiQiP5YZlbPCwNPEKizm5a+WPoUVG6ZU9yKarLsna86PXGYiIhELB7zX8/I3S1uRuVpPqZ5blMx9d1FozUqKnzwuowsLvP1cwIC0FelffNkCWImjS4lSKRldWODdzwWMSVuR6r1bKyB9sUpG3Hnyo6hnnb2kXwi8DS4gKW1F6vQirYDM79tkxB03o3xq/VGz4gIS/2sBLecSMstmuoCwtBWOWxDcICPuuBnlU3u/YwXULdA34YVntQJGeh+kZGbum/CKkXEUcG7QsQfUJpzxGH6cNT/etZQeDayljuEeGfVOoC/pKGB0Qn81w9vPLyJtm1uxqxTrKab6jkdoZWCdkq/jFQrHxyVidm7GLarYa2rmG/0xGc0B70ouYAkq0Ub39O3Imk+rpvtdmkjM/ipO4iet7khcM2e1Oe+/icMd6vcAjYN2t82NqEFlX73kKKL8683Ue/28RDm5PH6NNnUGYDipmfNqxBKO5W9S5gxWYTk6tB1y4lqvo4BpVXz7FjVeaKH2yyfoy99O0mfBVnq1ZyuVBCrUeOmhOnrik7+yBXw/pH/XwisJz/vE3gadu2Q8yxdDnQ5zrypp3Uhlu392PPsMvHaKbQ7082f4RTskR/cfP+B21LiaFFJpWyUdCHZKlhzw+BWHW8VWB8uyDAH89aoxaoZo6097aFWbvcSzafOZD2gwMiyzcyD33zjcK3buIGCFWxEMb87Dg8doy3c7aE1nLa1ur1RX6uvYRLWnt6m9MBS5ItE6bI4LfEhsCiMrEZS58wa5eNkLX/lMUEQxJjZA//ljAHP5j+tOnLrfcy/IavA/Yn5xeIJjoSbM1R+1+YBki6H1SOyH+iEDSoj4nPv8iKlEDfYbblaKiv4FoeF/NqqvoEMAAAAASUVORK5CYII=" InformativeScreenshot="1e881237bae5825cb106c868e89a0b6a.png" Selector="&lt;html htmlwindowname='IPmayH74' title='Google'/&gt;" Url="https://www.google.nl/?gws_rd=ssl#spf=1606231769183" />
+                                    </uix:NApplicationCard.TargetApp>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Because im saving as PDF, the bot will overwrite the template. Therefore im instead first making a copy of the word template to use" Destination="[&quot;Data\Output\&quot;+&quot;LetterOfNotice&quot; +&quot;_&quot;+row(&quot;LastName&quot;).ToString+&quot;_&quot;+row(&quot;FirstName&quot;).ToString+&quot;.docx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="631.2,204" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Data\Input\LetterOfNotice.docx">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CopyFile>
+                            <p:WordApplicationScope sap2010:Annotation.AnnotationText="Opening the copy" DisplayName="Word Application Scope" FilePath="[&quot;Data\Output\&quot;+&quot;LetterOfNotice&quot; +&quot;_&quot;+row(&quot;LastName&quot;).ToString+&quot;_&quot;+row(&quot;FirstName&quot;).ToString+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="631.2,2151.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                              <p:WordApplicationScope.Body>
+                                <ActivityAction x:TypeArguments="ui:WordDocument">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                                  </ActivityAction.Argument>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="516.8,2010.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence sap2010:Annotation.AnnotationText="Here I replace the text for the correct values that I read from my DataTable" DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1917.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[row(&quot;StreetName&quot;).ToString +&quot; &quot; + row(&quot;HouseNumber&quot;).ToString]" ReplaceAll="True" Search="Address" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[row(&quot;PostalCode&quot;).ToString]" ReplaceAll="True" Search="PostalCode" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[row(&quot;CityName&quot;).ToString]" ReplaceAll="True" Search="City" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" Replace="[row(&quot;FirstName&quot;).ToString]" ReplaceAll="True" Search="FirstName" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[row(&quot;LastName&quot;).ToString]" ReplaceAll="True" Search="LastName" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" Replace="[row(&quot;FlightNo&quot;).ToString]" ReplaceAll="True" Search="FlightNumber" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" Replace="[row(&quot;FlightDate&quot;).ToString]" ReplaceAll="True" Search="FlightDate" />
+                                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" Replace="[row(&quot;LostItem&quot;).ToString]" ReplaceAll="True" Search="ItemDescription" />
+                                      <p:WordExportToPdf sap2010:Annotation.AnnotationText="Saving it as a PDF in the output folder and constructing the correct name again, just to be sure" DisplayName="Save Document as PDF" FilePath="[&quot;Data\Output\&quot;+&quot;LetterOfNotice&quot; +&quot;_&quot;+row(&quot;LastName&quot;).ToString+&quot;_&quot;+row(&quot;FirstName&quot;).ToString]" sap:VirtualizedContainerService.HintSize="433.6,155.2" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </p:WordExportToPdf>
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </p:WordApplicationScope.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </p:WordApplicationScope>
+                            <ui:Delete ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="As I now have a correct PDF LetterOfNotice, I dont need the word-copy version anymore. So I delete it" sap:VirtualizedContainerService.HintSize="631.2,98.4" sap2010:WorkflowViewState.IdRef="Delete_2" Path="[&quot;Data\Output\&quot;+&quot;LetterOfNotice&quot; +&quot;_&quot;+row(&quot;LastName&quot;).ToString+&quot;_&quot;+row(&quot;FirstName&quot;).ToString+&quot;.docx&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Delete>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANSSURBVDhPdVL7T9JRHP32+Af6sYciSGZpa85Ws8cPrucsTbP19IfK0qlNqYxey2LLErVpEZG50MDQwEQxBUVIEXyUhkOWlaWzzEchBMQjXZ1uRGutOtvZ7g/nnHvu53OpH1A/7mC0Kx/UGeV5Y301ueYnCr5Ip5Lva9CbF5z/ilk+0f8g7cOcdpX0xltJIpzCEDiESzB1NxKj5ds9A5VZxid1ggtqrS6kaOI/QarWnuXm2rMjLjEdbkkg3PcJRQFwCwPhLGHgQ0nUt8F7ycPdtYKLKl3PAr/tNx6rG9PfyRJmvFWL4KkOgEdGWBPmC3Pdo8FVSoPzJh2T/HXfzBXszram+o0CF2b77RTVoRSVWaqi4JUtglceiC+aTZjuTIFXuYGEBJGQIHwuJeTRYLsWitelByf19ZJU2SvM9QX0PLphsEvC4ZUGwFvLwHTvCcyYLmO6KxOeSjo8Yhp5DmkhCIKziAZ7HhND/H1OvaLyWIWNNOmru/raIVoCi4gBRxUNXm0CrIYceJQxsAjpGBWEwJi3HI7bIXDylpI2m+C8ux8veCkftM1NO6h+OWdsiBeOrL2xuHx0M24dj8bJpDgUpm1E5u44FKVsQHr8DlhUOaTVLXg0+XBJT2OcvQodUmET1f+QM/acuwKH43YiJTEeSbG7cPrANqQmxONAzC4ciU3A+d0xcGi4cNefgberAi4xG+9Za2CQlTdQfQ+vDg5ciUAyEbZciIQpPxz3WWvRzVkBaWYU2tkRUKSvxngxCcmPhr0wEdazW2AuYI1pWjRbqac1PMN4QQT6OWFw8cnUCd03yfqKybmQDC6XDudFBmynGLBmBOPj4VAMcJKtbYqaQ2Ugn8ugqCifKFyPz1waHAX0n+TSYc9l4NOlYNjOMWE9sRhTqUyMp66EOS9rpE0h31/lxhzfGrXNqrSh4j0z9pwgfOIE/2SO35hNmMHEx6PLMJy9faZXcEWlUbes9hl/QaXvDTOWcYan2KGwsYnxFBM2lt+YFo6R7K1fTdfYJn21JKPx2fN5fttvyCyY3dpQy31ZcASTrEhMZK3EaHY0BjlJDiP/kq69WnJM2flsoV/+b6h1HfNbGxV3uiQl5m4xX6+Xia9rm9Ux9aY3f9/4ByjqO6jOL7p9SbKiAAAAAElFTkSuQmCC" InformativeScreenshot="ccac3075b687d8fc037d1679c0f807f6.png" Selector="&lt;html title='Postcode zoeken bij adres? Vind gemakkelijk &amp;amp; snel | PostNL'/&gt;" Url="https://www.postnl.nl/postcode-zoeken/" />
+                      </uix:NApplicationCard.TargetApp>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
